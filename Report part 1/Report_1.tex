@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\title{\textbf{Smart Classroom : Project Sheet}}
+\author{Anou Oussama - El Hazal Salma - Lakhiri Rim}
+\date{October 25, 2023}
+
+\usepackage{geometry}
+\usepackage{lipsum}
+\usepackage{enumitem}
+\usepackage{ragged2e}
+\usepackage{titlesec}
+\usepackage{hyperref}
+
+\titleformat{\section}{\LARGE\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\Large\bfseries}{\thesubsection}{1em}{}
+\newgeometry{
+	top=2cm,
+	bottom=2cm,
+	outer=2cm,
+	inner=2cm,
+}
+
+\begin{document}
+	
+
+	\maketitle
+	\section{Introduction}
+	
+	\subsection*{Project Objectives:}
+	\begin{itemize}
+		\item Automate student attendance using facial recognition at the entry of classes.
+		\item Have a database that facilitates the assessment of each student.
+		\item Simplify the process of managing absences.
+	\end{itemize}
+	
+	\subsection*{Project Motivation:}
+	\begin{itemize}
+		\item Improve efficiency: By automating the attendance-taking process using facial recognition, the project aims to optimize classroom time management and reduce manual administrative tasks related to tracking absences.
+		\item Enhance security: By using facial recognition technologies, the project controls access to classrooms and ensures that only authorized students can enter.
+		\item Facilitate assessment: Creating a database containing students' facial features and personal information facilitates the individual assessment of each student.
+		\item Promote digitization: The project aims to promote the digital transformation of learning environments by integrating advanced technologies.
+	\end{itemize}
+	
+	\section{Project Description}
+	The \textit{Smart Classroom} project aims to implement the following services:
+	\begin{itemize}
+		\item Attendance logging with a camera placed at the entrance of the room.
+		\item Another camera to record the session and capture content for the board.
+		\item Allow school members to access their personal space on a dedicated website for tracking absences based on their permissions. Students can view their profile to know their attendance status in all subjects. Teachers, on the other hand, have the right to delete or modify the attendance status of students.
+	\end{itemize}
+	
+	\section{Hardware and Software Requirements}
+	\subsection{Hardware Requirements:}
+	\begin{itemize}
+		\item Raspberry Pi Camera Module
+		\item LED lights
+		\item Buzzer
+	\end{itemize}
+	
+	\subsection{Software Required to Implement the Project}
+	\begin{itemize}
+		\item IDE: VsCode, PyCharm, Thonny
+		\item Python Frameworks: Django, OpenCV
+		\item Web tools: HTML, CSS, JavaScript
+		\item OS: Raspbian
+	\end{itemize}
+	
+	\section{Conclusion}
+	In conclusion, this project marks a first step toward a broad digitization process as part of the INPT Go Digital school program. It aims to digitize certain aspects and daily tasks of students and teachers, thereby facilitating the learning process within our school.
+	
+	\section{Bibliographical References}
+	\href{https://www.raspberrypi.com/}{https://www.raspberrypi.com/}\\
+	\href{https://towardsdatascience.com/real-time-face-recognition-an-end-to-end-project-b738bb0f7348}{https://towardsdatascience.com/}
+	
+\end{document}
