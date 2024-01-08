@@ -1,5 +1,6 @@
+
 \documentclass[11pt]{article}
-\title{\textbf{Smart Classroom: Face Recognition And Video Recording Implementation}}
+\title{\textbf{Smart Classroom Prototype: Implementation Overview}}
 \author{Anou Oussama - El Hazal Salma - Lakhiri Rim}
 \date{January 6, 2024}
 \usepackage{fullpage}
@@ -9,37 +10,31 @@
 	\maketitle
 	
 	\section{Introduction}
-	\quad The implementation phase involves integrating face recognition capabilities into the Smart Classroom system using Python, an API, and the Raspberry Pi. This section outlines the key steps and components involved in the face recognition implementation.
+	\hspace{1cm} The implementation phase focuses on integrating face recognition capabilities into the Smart Classroom prototype using Python, an API, and a PC's camera. This section outlines the key steps and components involved in the face recognition implementation, emphasizing that this is a prototype to test and validate the feasibility of the proposed solution.
 	
 	\hspace{1cm} \subsection{Overview}
-	\quad Face recognition is implemented to enhance the security and functionality of the Smart Classroom. The Raspberry Pi, equipped with a camera, serves as the primary device for capturing faces and performing facial recognition. An external API is utilized to handle the intricate aspects of facial recognition algorithms, allowing for accurate and efficient identification of individuals.
+	\hspace{1cm} Face recognition is implemented to enhance the security and functionality of the Smart Classroom prototype. In this project, we concentrate on using a PC's camera for facial recognition, providing a cost-effective alternative. An external API is utilized to handle the intricate aspects of facial recognition algorithms, allowing for accurate and efficient identification of individuals.
 	
-	\subsection{Components and Workflow}
-	\subsubsection{Camera Setup}
-	The camera installed on the classroom ceiling plays a crucial role in capturing video sessions. It continuously records the classroom activities and sends the footage to the Raspberry Pi for real-time face recognition.
+	\hspace{1cm} \subsection{Components and Workflow}
+	 \subsubsection{Camera Setup}
+	\hspace{1cm} \hspace{1cm} The camera installed on the classroom ceiling plays a crucial role in capturing video sessions. It continuously records the classroom activities and sends the footage to the Raspberry Pi for real-time face recognition.
 	
-	\subsubsection{Raspberry Pi Integration}
-	The Raspberry Pi, positioned on the door frame, acts as the central hub for face recognition. It communicates with the camera, processes the video feed, and interacts with the external face recognition API.
+	\hspace{1cm} \hspace{1cm} \subsubsection{Raspberry Pi Integration}
+	\hspace{1cm} \hspace{1cm} The Raspberry Pi, positioned on the door frame, acts as the central hub for face recognition in the prototype. It communicates with the camera, processes the video feed, and interacts with the external face recognition API.
 	
-	\subsubsection{External Face Recognition API}
-	The external API is responsible for the complex task of face recognition. It leverages advanced algorithms to analyze facial features, compare them against a pre-existing database, and determine the identity of individuals in the classroom.
+	\hspace{1cm} \hspace{1cm} \subsubsection{External Face Recognition API}
+	\hspace{1cm} \hspace{1cm} The external API is responsible for the complex task of face recognition. It leverages advanced algorithms to analyze facial features, compare them against a pre-existing database, and determine the identity of individuals in the classroom.
 	
-	\subsubsection{Buzzer and LED Feedback}
-	Upon successful or unsuccessful facial recognition, the Raspberry Pi triggers feedback mechanisms. The buzzer emits distinct sounds for different scenarios, alerting users to errors or successful recognitions. Additionally, an LED indicator displays red or green lights, providing a visual confirmation of the recognition outcome.
+	\hspace{1cm} \subsection{Python Scripting}
+	\hspace{1cm} The implementation involves the development of Python scripts to facilitate communication between the PC, camera, and external API. These scripts handle data transfer, error handling, and the overall orchestration of the face recognition process.
 	
-	\subsection{Python Scripting}
-	The implementation involves the development of Python scripts to facilitate the communication between the Raspberry Pi, camera, and external API. These scripts handle data transfer, error handling, and the overall orchestration of the face recognition process.
+	\hspace{1cm} \subsection{Recording Lectures}
+	\hspace{1cm} The Smart Classroom prototype, now equipped with face recognition capabilities, extends its functionality to record lectures. When a recognized face enters the classroom, the system initiates the recording of the session, creating a valuable resource for later review or archival purposes.
 	
-	\subsection{Recording Lectures}
-	The Smart Classroom system, now equipped with face recognition capabilities, extends its functionality to record lectures. When a recognized face enters the classroom, the system initiates the recording of the session, creating a valuable resource for later review or archival purposes.
+	\hspace{1cm} \subsection{Challenges and Solutions}
+	\hspace{1cm} Throughout the implementation phase of the prototype, challenges such as lighting conditions, varying facial expressions, and database management may arise. Robust error-handling mechanisms and continuous optimization of the face recognition algorithm are implemented to address these challenges and enhance the reliability of the prototype.
 	
-	\subsection{Integration Testing}
-	To ensure the seamless functioning of the face recognition system, rigorous integration testing is conducted. This phase involves validating the communication between the camera, Raspberry Pi, and the external API. Additionally, the feedback mechanisms, such as the buzzer and LED, are tested for accuracy and responsiveness.
-	
-	\subsection{Challenges and Solutions}
-	Throughout the implementation phase, challenges such as lighting conditions, varying facial expressions, and database management may arise. Robust error-handling mechanisms and continuous optimization of the face recognition algorithm are implemented to address these challenges and enhance system reliability.
-	
-	The successful implementation of face recognition significantly contributes to the Smart Classroom's security and recording capabilities, creating a technologically advanced learning environment.
+	\hspace{1cm} The successful implementation of face recognition in the Smart Classroom prototype significantly contributes to its functionality, serving as a foundation for further development and refinement.
 	
 	\pagebreak
 	
