@@ -1,0 +1,112 @@
+\documentclass[11pt]{article}
+\title{\textbf{Smart Classroom Prototype: Implementation Overview}}
+\author{Anou Oussama - El Hazal Salma - Lakhiri Rim}
+\date{January 6, 2024}
+\usepackage{fullpage}
+\usepackage{graphicx}
+
+\begin{document}
+	\maketitle
+	
+	\section{Introduction}
+	\hspace{1cm} The implementation phase focuses on integrating face recognition capabilities into the Smart Classroom prototype using Python, an API, and a PC's camera. This section outlines the key steps and components involved in the face recognition implementation, emphasizing that this is a prototype to test and validate the feasibility of the proposed solution.
+	
+	\hspace{1cm} \subsection{Overview}
+	\hspace{1cm} Face recognition is implemented to enhance the security and functionality of the Smart Classroom prototype. In this project, we concentrate on using a PC's camera for facial recognition, providing a cost-effective alternative. An external API is utilized to handle the intricate aspects of facial recognition algorithms, allowing for accurate and efficient identification of individuals.
+	
+	\hspace{1cm} \subsection{Components and Workflow}
+	 \subsubsection{Camera Setup}
+	\hspace{1cm} \hspace{1cm} The camera installed on the classroom ceiling plays a crucial role in capturing video sessions. It continuously records the classroom activities and sends the footage to the Raspberry Pi for real-time face recognition.
+	
+	\hspace{1cm} \hspace{1cm} \subsubsection{Raspberry Pi Integration : OS and software }
+	\hspace{1cm} \hspace{1cm} The Raspberry Pi, positioned on the door frame, acts as the central hub for face recognition in the prototype. It communicates with the camera, processes the video feed, and interacts with the external face recognition API.
+    in order to operate the Raspberry pi card the way we need , it is crucial to follow the here mentioned  steps :
+
+    \textit{1 . Set up the Operating System:}
+
+    
+    \textit{2 .Install Required Software:}
+
+    
+    \textit{3. Storage Configuration:}\newpage
+
+    
+
+    
+
+
+\textbf{ 1 . Set up the Operating System:   }
+
+
+\hspace{1cm} \hspace{1cm} In a raspberry Pi card the OS is installed within the SD card that we insert inside the card . in order to install the OS inside the SD card we must \textbf{Download raspberry Pi OS } from the official website of raspberry pi , and then we \textbf{flash the OS to the SD card } using a tool like "raspberry pi imager " or "fetcher " and finally we insert the SD card  and boot the Raspberry Pi card .
+
+
+
+
+
+
+
+
+
+
+
+    \textbf{2.Install required software :}
+    Once the Raspberry Pi OS was installed and running, the necessary software for the camera and storage management was installed.
+
+Camera Module Enabled:
+The Raspberry Pi Configuration tool was opened:
+
+Either sudo raspi-config was typed in the terminal and hit Enter, or the Raspberry Pi menu  Preferences  Raspberry Pi Configuration was accessed.
+"Interfaces" was navigated to, and "Camera" was selected. The camera interface was enabled, and a reboot was performed if prompted.
+
+
+
+PiCamera Python Library Installed:
+The picamera library, enabling Python scripts to control the Raspberry Pi Camera Module, was installed successfully.
+
+
+
+
+\textbf{3.Storage configuration :}
+
+
+
+\hspace{1cm} \hspace{1cm}Cloud storage services like Google Drive, Dropbox, or Nextcloud were chosen for syncing the recorded videos and images. The corresponding software or third-party tools supporting cloud sync were installed on the Raspberry Pi. This enabled automatic uploading of content to the cloud, allowing access from anywhere with an internet connection.
+
+\subsubsection{Raspberry Pi Integration : external hardware }
+
+
+
+\hspace{1cm} \hspace{1cm} The external hardware portion is the extended part of the Raspberry that allows us to fully exploit it , we will be adding an \textbf{SD card} That will contain our data and our OS and Software , we will also have \textbf{LED lamp} that will light up green when the face is recognized or red when the face is not recognized , on top of that we will add a \textbf{BUZZER } that will reinforce the LED lamp in letting us know the correct facial recognition or its failure .
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.75\linewidth]{everything all together.png}
+    \caption{montage of the hardware }
+    \label{fig:enter-label}
+\end{figure}
+
+
+
+    
+
+
+
+	
+	\hspace{1cm} \hspace{1cm} \subsubsection{External Face Recognition API}
+	\hspace{1cm} \hspace{1cm} The external API is responsible for the complex task of face recognition. It leverages advanced algorithms to analyze facial features, compare them against a pre-existing database, and determine the identity of individuals in the classroom.
+	
+	\hspace{1cm} \subsection{Python Scripting}
+	\hspace{1cm} The implementation involves the development of Python scripts to facilitate communication between the PC, camera, and external API. These scripts handle data transfer, error handling, and the overall orchestration of the face recognition process.
+	
+	\hspace{1cm} \subsection{Recording Lectures}
+	\hspace{1cm} The Smart Classroom prototype, now equipped with face recognition capabilities, extends its functionality to record lectures. When a recognized face enters the classroom, the system initiates the recording of the session, creating a valuable resource for later review or archival purposes.
+	
+	\hspace{1cm} \subsection{Challenges and Solutions}
+	\hspace{1cm} Throughout the implementation phase of the prototype, challenges such as lighting conditions, varying facial expressions, and database management may arise. Robust error-handling mechanisms and continuous optimization of the face recognition algorithm are implemented to address these challenges and enhance the reliability of the prototype.
+	
+	\hspace{1cm} The successful implementation of face recognition in the Smart Classroom prototype significantly contributes to its functionality, serving as a foundation for further development and refinement.
+	
+	\pagebreak
+	
+\end{document}
